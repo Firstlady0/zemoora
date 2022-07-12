@@ -72,3 +72,46 @@ nav a{
     margin:20px 0px;
     color: #ffffff;
 }
+table{
+    width:850px;
+    margin-left:auto; 
+    margin-right:auto;
+    text-align:center;
+    border-collapse:collapse;
+    border-width:3px;
+}
+td{
+    padding:10px 12px;
+}
+th{
+    text-align:left;
+    font-weight:normal;
+    padding:10px 12px;
+} 
+.packages h3{
+    text-align:center;
+    font-size: 25px;
+    color:var(--color-primary);
+}
+.packages{
+    padding:60px;
+}
+tbody{
+    text-align: justify;
+    background-color: rgb(252, 246, 246);
+    
+}
+thead{
+    background-color:rgba(241, 232, 232, 0.918)
+}
+tbody tr{
+    border-bottom:1px solid rgba(241, 232, 232, 0.918);
+}
+footer{
+    background-color:var(--color-primary);
+    padding:10px;
+}
+footer p{
+    color:#ffffff;
+    font-size: small;
+}
