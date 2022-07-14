@@ -72,7 +72,7 @@ nav a{
     margin:20px 0px;
     color: #ffffff;
 }
-table{
+/* table{ 
     width:850px;
     margin-left:auto; 
     margin-right:auto;
@@ -98,20 +98,58 @@ th{
 }
 tbody{
     text-align: justify;
-    background-color: rgb(252, 246, 246);
+    background-color: #eeeeee;
     
 }
 thead{
-    background-color:rgba(241, 232, 232, 0.918)
+    background-color:#f9f9f9;
 }
 tbody tr{
-    border-bottom:1px solid rgba(241, 232, 232, 0.918);
+    border-bottom:1px solid #eeeeee;
 }
 footer{
     background-color:var(--color-primary);
-    padding:10px;
+    padding:var(--container-padding);
 }
 footer p{
     color:#ffffff;
     font-size: small;
+}*/
+.service-charge h3 {
+    text-align:center;
+    font-size:30px;
+    color:var(--color-primary);
+}
+.table-area {
+    display: flex;
+    justify-content:center;
+    margin-bottom:40px;
+    border-radius:20px;
+    overflow: hidden;
+}
+.table-area td{
+    background-color: #f9f9f9f9;
+    border-bottom: 1px solid #eeeeee;
+}
+.table-area th{
+    background-color: #eeeeee;
+    text-align:left;
+}
+.table-area td, th{
+    padding:14px 8px;
+}
+table{
+    width:850px;
+    border-collapse:collapse;
+}
+.service-charge{
+    padding:50px 0px; 
+}
+footer{
+    background-color: var(--color-primary);
+    padding:var(--container-padding)
+}
+footer p{
+    font-size:smaller;
+    color:white;
 }
