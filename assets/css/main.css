@@ -1,6 +1,7 @@
 :root{
     --color-primary: #272343;
     --color-primary-transparent:#27234375;
+    --color-primary-light: #eeeeee;
     --container-padding: 10px 80px;
 
 }
@@ -73,8 +74,9 @@ nav a{
     margin: 10px 0px;
 }
 .slogan{
-    padding: 10px 80px;
-    background-color:#272343;
+    padding: var(--container-padding);
+    padding-top: 45px;
+    background-color:var(--color-primary-light);
     display: flex;
     color:#ffffff;
     gap:100px;
@@ -82,6 +84,30 @@ nav a{
 .slogan div{
     margin:20px 0px;
     color: #ffffff;
+    background-color: var(--color-primary);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.slogan h3 {
+    margin-top: 35px;
+}
+
+.slogan span {
+    font-size: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: -39px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 /* table{ 
     width:850px;
@@ -164,6 +190,14 @@ footer p{
     font-size:smaller;
     color:white;
 }
+
+@media only screen and (max-width: 800px) {
+    .slogan {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
 @media only screen and (max-width: 750px) {
     nav{
         display:none;
@@ -172,5 +206,12 @@ footer p{
         display:inline-block;
     }
     
+}
+
+@media only screen and (max-width: 500px) {
+    .slogan {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
